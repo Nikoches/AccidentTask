@@ -15,7 +15,7 @@ public class WebConfig {
         InternalResourceViewResolver bean = new InternalResourceViewResolver();
         bean.setViewClass(JstlView.class);
         bean.setPrefix("./WEB-INF/views/");
-        bean.setSuffix(".jsp");
+        bean.setSuffix(".ftl");
         return bean;
     }
 }

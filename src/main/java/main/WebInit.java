@@ -1,6 +1,9 @@
 package main;
 
 
+import main.model.Accident;
+import main.repository.AccidentMem;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -18,5 +21,6 @@ public class WebInit implements WebApplicationInitializer {
         ServletRegistration.Dynamic registration = servletCxt.addServlet("app", servlet);
         registration.setLoadOnStartup(1);
         registration.addMapping("/");
+
     }
 }
