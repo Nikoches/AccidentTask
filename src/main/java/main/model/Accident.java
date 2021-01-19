@@ -1,5 +1,8 @@
 package main.model;
 
+import javax.persistence.Entity;
+
+@Entity(name = "accident")
 public class Accident {
     private int id;
     private String name;
