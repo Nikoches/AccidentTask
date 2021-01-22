@@ -1,4 +1,4 @@
-package main;
+package ru.job4j;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;

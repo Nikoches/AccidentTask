@@ -1,4 +1,4 @@
-package main;
+package ru.job4j;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -8,7 +8,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@ComponentScan("main")
+@ComponentScan("ru.job4j")
 public class WebConfig {
     @Bean
     public ViewResolver viewResolver() {

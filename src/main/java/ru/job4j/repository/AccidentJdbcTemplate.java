@@ -1,13 +1,9 @@
-package main.repository;
+package ru.job4j.repository;
 
-import main.model.Accident;
+import ru.job4j.model.Accident;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
 public class AccidentJdbcTemplate {
     private final JdbcTemplate jdbc;
