@@ -1,11 +1,16 @@
 package ru.job4j.model;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 
-@Entity(name = "accident")
+@Table(name = "accident")
+@Entity
 public class Accident {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(name = "name")
     private String name;
+
     private String text;
     private String address;
 

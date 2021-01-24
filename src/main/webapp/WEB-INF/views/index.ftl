@@ -46,7 +46,7 @@
         <th>Text</th>
         <th>Adress</th>
     </tr>
-    <#list acc as accid>
+    <#list accidents as accid>
         <tr>
             <td>${accid.id}</td>
             <td>${accid.name}</td>
