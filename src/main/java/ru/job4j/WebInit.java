@@ -14,7 +14,7 @@ public class WebInit implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext ac = new AnnotationConfigWebApplicationContext();
         //ac.refresh();
         ac.scan("job4j");
-        ac.register(WebConfig.class, HbmConfig.class);
+        ac.register(WebConfig.class, HbmConfig.class, SecurityConfig.class);
         DispatcherServlet servlet = new DispatcherServlet(ac);
         ServletRegistration.Dynamic registration = servletCxt.addServlet("app", servlet);
         registration.setLoadOnStartup(1);
