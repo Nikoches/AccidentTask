@@ -40,6 +40,9 @@
     <br>
     <div class="layer1">All Accidents</div>
     <br>
+    <div>
+        Login as : ${user.username}
+    </div>
     <tr>
         <th>ID</th>
         <th>Name</th>

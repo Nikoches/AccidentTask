@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.Configs;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Value;

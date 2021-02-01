@@ -4,6 +4,9 @@ package ru.job4j;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+import ru.job4j.Configs.HbmConfig;
+import ru.job4j.Configs.SecurityConfig;
+import ru.job4j.Configs.WebConfig;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
