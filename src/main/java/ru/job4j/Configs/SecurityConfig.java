@@ -34,4 +34,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         .password(passwordEncoder().encode("123456"))
                         .roles("USER"));
     }
+    @Override
+    protected  void configure(HttpSecurity http) throws Exception{
+                http.authorizeRequests()
+                .antMatchers("/login")
+                        .permitAll()
+                        .antMatchers("/**")
+                        .hasAnyRole()
+                        .and()
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/")
+                .failureUrl("/login?error=true")
+                .permitAll()
+                .and()
+                .logout()
+                .logoutSuccessUrl("/login?logout=true")
+                .invalidateHttpSession(true)
+                .permitAll()
+                .and()
+                .csrf()
+                .disable();
+    }
 }
